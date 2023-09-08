@@ -21,7 +21,10 @@
             <a href="book.php">book</a>
         </nav>
     </section>
-
+    <?php 
+    $a =12;
+    echo $a;
+    ?>
     <!--swiper js-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

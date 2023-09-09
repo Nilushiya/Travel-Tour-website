@@ -95,6 +95,10 @@ section{
 @media(max-width:768px){
     #menu-btn{
         display: inline-block;
+        transition: .2s linear;
+    }
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
     }
     .header .navbar{
         position: absolute;
@@ -104,6 +108,11 @@ section{
         background-color: var(--white);
         border-top: var(--border);
         padding: 2rem;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
     .header .navbar a{
         display: block;

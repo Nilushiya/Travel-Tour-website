@@ -22,8 +22,7 @@
     text-transform: capitalize;
 }
 html{
-    font-size: 62.5%;
-    overflow: hidden;
+    font-size: 62.5%;  
 }
 html::-webkit-scrollbar{
     width: 1rem;
@@ -48,7 +47,7 @@ section{
     padding: 1rem;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 2px 5px 10px black;
+    box-shadow: 2px 5px 10px var(--black);
 }
 .header .logo{
     font-size: 2.5rem;
@@ -68,7 +67,33 @@ section{
     color: var(--black);
     display: none;
 }
+section{
+    width: 100vw;
+    min-height: 50vh;
+}
 
+/*footer*/
+.footer{
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(media/footer.jpg);
+}
+.footer .box-container{
+    display: grid ;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 2rem;
+}
+.footer .box-container .box h3{
+    color:var(--white);
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+.footer .box-container .box a{
+    color:var(--light-white);
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    display: block;
+}
 
 
 @media(max-width:1200px){

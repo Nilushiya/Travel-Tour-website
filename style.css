@@ -19,7 +19,6 @@
     outline: none;
     border:none;
     text-decoration: none;
-    text-transform: capitalize;
 }
 html{
     font-size: 62.5%;  
@@ -76,12 +75,12 @@ section{
 .footer{
     background-size: cover;
     background-position: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(media/footer.jpg);
-}
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(media/footer.jpg);}
 .footer .box-container{
     display: grid ;
     grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
     gap: 2rem;
+    padding-left: .7rem;
 }
 .footer .box-container .box h3{
     color:var(--white);
@@ -93,6 +92,26 @@ section{
     font-size: 1.5rem;
     padding-bottom: 1rem;
     display: block;
+}
+.footer .box-container .box a i{
+    color:var(--main-color);
+    padding-right: .5rem;
+    transition: .2rem linear;
+}
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+.credit{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-top: 3rem;
+    border-top: .3rem solid var(--light-white);
+    font-size: 2rem;
+    color: var(--white);
+}
+.credit span{
+    color: var(--main-color);
 }
 
 

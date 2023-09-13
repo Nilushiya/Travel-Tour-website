@@ -32,9 +32,6 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
     background-color: var(--main-color);
 }
-section{
-    padding: 1rem 1%;
-}
 .header{
     position: sticky;
     top:0;
@@ -66,9 +63,19 @@ section{
     color: var(--black);
     display: none;
 }
+
+
 section{
+    padding: 1rem 1%;
     min-height: 50vh;
 }
+/* animation */
+@keyframes fadeIn {
+    0%{
+     transform: scale(.5);
+     opacity: 0;
+    }
+ }
 .btn{
     display: inline-block;
     background:var(--black);
@@ -102,7 +109,7 @@ section{
     align-items: center;
     background-position: center !important;
     background-size: cover !important;
-    min-height: 50rem;
+    min-height: 40rem;
 }
 .home .swiper-slide .content{
     width: 85rem;
@@ -110,8 +117,9 @@ section{
 .home .swiper-slide span{
      display: block;
      font-size: 2.2rem;
-     columns: var(--light-white);
+     color: var(--main-color);
      padding-bottom: 1rem;
+     animation:fadeIn .4s linear backwards .3s;
 }
 .home .swiper-slide .content h3{
     font-size: 6vw;
@@ -120,6 +128,63 @@ section{
     line-height: 1;
     text-shadow:0rem 1rem 1rem #080808;
     padding: 1rem 0;
+    animation:fadeIn .4s linear backwards .4s;
+}
+.home .swiper-slide .content .btn{
+    animation:fadeIn .4s linear backwards .46s;
+}
+.swiper-button-next,.swiper-button-prev{
+    top: inherit;
+    left: inherit;
+    bottom: 0;
+    right: 0;
+    height: 5rem;
+    width: 5rem;
+    background-color: var(--white);
+    color: var(--black);
+}
+.swiper-button-next:hover,.swiper-button-prev:hover{
+    background: var(--main-color);
+    color: var(--white);
+}
+.swiper-button-next::after,.swiper-button-prev::after{
+    font-size: 2rem;
+}
+.swiper-button-prev{
+    right: 5rem;
+}
+
+
+
+
+
+
+/* home-about */
+.home-about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    align-items: center;
+}
+.home-about .image{
+  
+}
+.home-about .image img{
+    width: 100%;
+}
+.home-about .content{
+  
+    padding: 3rem;
+    background: var(--light-bg);
+}
+.home-about .content h3{
+    font-size: 3rem;
+    color: var(--black);
+}
+.home-about .content p{
+    font-size: 1.5rem;
+    line-height: 2;
+    padding: 1rem 0;
+    color: var(--black);
 }
 
 
@@ -222,14 +287,9 @@ section{
     section{
         padding: 3rem 2rem;
     }
+    .home .swiper-slide .content h3{
+        font-size: 5vw;
 }
-@media(max-width:991px){
-    html{
-        font-size: 55%;
-    }
-    section{
-        padding: 3rem 2rem;
-    }
 }
 @media(max-width:768px){
     #menu-btn{
@@ -258,9 +318,21 @@ section{
         margin: 2rem;
         text-align: center;
     }
+    .home .swiper-slide .content h3{
+        font-size: 5vw;
+    }
+    .home .swiper-slide span{
+        font-size: 2rem;
+    }
 }
 @media(max-width:450px){
     html{
         font-size: 50%;
+    }
+    .home .swiper-slide .content h3{
+        font-size: 3vw;
+    }
+    .home .swiper-slide span{
+        font-size: 1.7rem;
     }
 }

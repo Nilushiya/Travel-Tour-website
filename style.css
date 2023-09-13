@@ -67,7 +67,6 @@ section{
     display: none;
 }
 section{
-    width: 100vw;
     min-height: 50vh;
 }
 .btn{
@@ -81,7 +80,7 @@ section{
     cursor: pointer;
 }
 .btn:hover{
-    color: var(--main-color);
+    background-color: var(--main-color);
 }
 
 
@@ -95,7 +94,7 @@ section{
 .home{
     padding: 0;
 }
-.home .slide{
+.home .swiper-slide{
     text-align: center;
     padding: 2rem;
     display: flex;
@@ -105,16 +104,16 @@ section{
     background-size: cover !important;
     min-height: 50rem;
 }
-.home .slide .content{
+.home .swiper-slide .content{
     width: 85rem;
 }
-.home .slide span{
+.home .swiper-slide span{
      display: block;
      font-size: 2.2rem;
      columns: var(--light-white);
      padding-bottom: 1rem;
 }
-.home .slide .content h3{
+.home .swiper-slide .content h3{
     font-size: 6vw;
     color: var(--white);
     text-transform: uppercase;
@@ -164,6 +163,9 @@ section{
     text-transform: uppercase;
 }
 
+
+
+
 /*footer*/
 .footer{
     background-size: cover;
@@ -172,7 +174,7 @@ section{
 .footer .box-container{
     display: grid ;
     grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
-    gap: 2rem;
+    gap: 1rem;
     padding-left: .7rem;
 }
 .footer .box-container .box h3{

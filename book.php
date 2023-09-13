@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +23,10 @@
             </nav>
 
             <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+        
+        <div class="heading" style="background: url(media/home3.jpg) no-repeat">
+            <h1>Book</h1>
         </div>
 
 <!--footer-->
@@ -59,44 +63,11 @@
         </div>
         <div class="credit"> Created by <span>nilu web creater</span> | all rights reserved! |</div>
     </section>
+
     <script src="js.js"></script>
     <!--swiper js-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
    
 </body>
-</html>
+</php>
 
-
-<!--
-    <!DOCTYPE html>
-<html>
-<head>
-<style> 
-div {
-  width: 100px;
-  height: 70px;
-font-size:60px;
-  background-color: red;
-  transition: width 2s;
-   overflow: hidden;
-}
-
-div:hover {
-  width: 500px;
-}
-</style>
-</head>
-<body>
-
-<h1>The transition Property</h1>
-
-<p>Hover over the div element below, to see the transition effect:</p>
-<div>
-<div>
-Hi, I am Nilushiya
-</div>
-</div>
-
-</body>
-</html>
--->

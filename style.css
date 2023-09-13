@@ -70,6 +70,99 @@ section{
     width: 100vw;
     min-height: 50vh;
 }
+.btn{
+    display: inline-block;
+    background:var(--black);
+    margin-top: 1rem;
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 1rem 2.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+/* home */
+.home{
+    padding: 0;
+}
+.home .slide{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center !important;
+    background-size: cover !important;
+    min-height: 50rem;
+}
+.home .slide .content{
+    width: 85rem;
+}
+.home .slide span{
+     display: block;
+     font-size: 2.2rem;
+     columns: var(--light-white);
+     padding-bottom: 1rem;
+}
+.home .slide .content h3{
+    font-size: 6vw;
+    color: var(--white);
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow:0rem 1rem 1rem #080808;
+    padding: 1rem 0;
+}
+
+
+
+
+
+
+
+/* services */
+.services .class-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    gap: 1rem;
+    margin:0 5% 0 5%;
+}
+.services .class-container .box{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--main-color);
+}
+.services .class-container .box:hover {
+    background: var(--white);
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+}
+.services .class-container .box img{
+    height: 5rem;
+}
+.services .class-container .box img:hover{
+    color: var(--white);
+}
+.services .class-container .box h3{
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+.heading-title{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
 
 /*footer*/
 .footer{

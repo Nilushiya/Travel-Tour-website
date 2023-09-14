@@ -205,7 +205,7 @@ section{
 
 
 
-/*home-packages*/
+/*packages*/
 .home-packages{
     background: var(--light-bg);
 }
@@ -398,13 +398,51 @@ section{
     color: var(--main-color);
 }
 .reviews .swiper-slide img{
-    height: 8rem;
-    width: 8rem;
+    height: 7rem;
+    width: 7rem;
     border-radius: 50%;
 }
 
 
-
+/* packages */
+.packages .box-container{
+    display: grid ;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 2rem;
+}
+.packages .box-container .box{
+    border: var(--border);
+    box-shadow: 2px 2px 4px var(--main-color);
+    background: var(--white);
+}
+.packages .box-container .image{
+    height: 25rem;
+    overflow: hidden;
+}
+.packages .box-container .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+.packages .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+.packages .box-container .box .content h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+.packages .box-container .box .content p{
+    font-size: 1rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1.5rem 0;
+}
+.packages .load-more{
+    text-align: center;
+    margin-top: 2rem;
+}
 
 /*footer*/
 .footer{

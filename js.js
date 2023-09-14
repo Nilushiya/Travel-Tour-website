@@ -14,3 +14,23 @@ menu.addEventListener("click",() => {
   navbar.classList.toggle("active");
 })
 
+
+
+let swiperr = new Swiper(".reviews-slider", {
+  loop: true,
+  spaceBetween: 20,
+  autoHeight:true,
+  grabCursor:true,
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+

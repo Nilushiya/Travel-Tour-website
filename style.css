@@ -314,6 +314,7 @@ section{
 .about{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 3rem;
 }
@@ -353,12 +354,55 @@ section{
     font-size: 4rem;
     margin-bottom: 1rem;
     color: var(--main-color);
+    display: block;
 }
 .about .content .icons-container .icons span{
     font-size: 1.3rem;
     color: var(--light-black);
     display: block;
+    margin-top: 1rem;
 }
+
+
+/* reviews */
+.reviews{
+    background-color: var(--light-bg);
+}
+.reviews .swiper-slide {
+    padding: 2rem;
+    border: var(--border);
+    background: var(--white);
+    text-align: center;
+    box-shadow: 2px 3px 20px var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reviews .swiper-slide .stars i{
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+.reviews .swiper-slide p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+.reviews .swiper-slide h3{
+    font-size: 2rem;
+    color: --black;
+}
+.reviews .swiper-slide span{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+.reviews .swiper-slide img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+
 
 
 

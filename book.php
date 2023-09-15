@@ -19,7 +19,7 @@
                 <a href="home.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="package.html">Package</a>
-                <a href="book.html">Book</a>
+                <a href="book.php">Book</a>
             </nav>
 
             <div id="menu-btn" class="fas fa-bars"></div>
@@ -80,7 +80,7 @@
                     <a href="home.html"> <i class="fas fa-angle-right"></i> Home</a>
                     <a href="about.html"> <i class="fas fa-angle-right"> </i>About</a>
                     <a href="package.html"> <i class="fas fa-angle-right"></i> Package</a>
-                    <a href="book.html"> <i class="fas fa-angle-right"></i> Book</a>
+                    <a href="book.php"> <i class="fas fa-angle-right"></i> Book</a>
                 </div>
                 <div class="box">
                     <h3>Extra links</h3>

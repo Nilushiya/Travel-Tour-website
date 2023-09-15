@@ -33,7 +33,7 @@
         <!--booking-->
         <section class="booking">
             <div class="heading-title">Book your trip!</div>
-            <form action="book-form.php" method="post" class="book-form">
+            <form action="book_form.php" method="post" class="book_form">
                 <div class="flex">
                     <div class="inputBox">
                         <span>name :</span>

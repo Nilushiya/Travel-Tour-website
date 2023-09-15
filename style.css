@@ -254,6 +254,10 @@ section{
 /* home-offer */
 .home-offer{
     text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .home-offer .content{
     max-width: 70rem;
@@ -268,7 +272,6 @@ section{
     font-size: 1.5rem;
     color: var(--light-black);
     line-height: 2;
-    padding: 1rem 0;
 }
 
 

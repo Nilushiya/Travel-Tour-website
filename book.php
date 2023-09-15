@@ -33,7 +33,7 @@
         <!--booking-->
         <section class="booking">
             <div class="heading-title">Book your trip!</div>
-            <form action="book_form.php" method="post" class="book_form">
+            <form action="book_form.php" method="post" class="book-form">
                 <div class="flex">
                     <div class="inputBox">
                         <span>name :</span>
@@ -91,17 +91,17 @@
                 </div>
                 <div class="box">
                     <h3>Contact info</h3>
-                    <a href="#"> <i class="fas fa-phone"></i> 0765779765</a>
-                    <a href="#"> <i class="fas fa-phone"></i> 0778059184</a>
-                    <a href="#"> <i class="fa-solid fa-envelope"></i> nilushiyak@gmail.com</a>
-                    <a href="#"><i class="fa-solid fa-location-dot"></i> Vaddukoddai, jaffna.</a>
+                    <a href="tel:0765779765"> <i class="fas fa-phone"></i> 0765779765</a>
+                    <a href="tel:0778059184"> <i class="fas fa-phone"></i> 0778059184</a>
+                    <a href="mailto:"nilushiyak@gmail.com> <i class="fa-solid fa-envelope"></i> nilushiyak@gmail.com</a>
+                    <a href="https://www.google.com/maps/place/Sinthupuram+Junction/@9.7452709,79.9506864,17z/data=!3m1!4b1!4m6!3m5!1s0x3afe52d1a8d31c2d:0x69239d183e5590ee!8m2!3d9.7452656!4d79.9552998!16s%2Fg%2F11cmzghmkb?authuser=0&entry=ttu"><i class="fa-solid fa-location-dot"></i> Vaddukoddai, jaffna.</a>
                 </div>
                 <div class="box">
                     <h3>Follow us</h3>
-                    <a href="#"> <i class="fa-brands fa-linkedin"></i> Linkedin</a>
-                    <a href="#"> <i class="fa-brands fa-github"></i> Github</a>
-                    <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
-                    <a href="#"> <i class="fa-brands fa-facebook"></i> Facebook</a>
+                    <a href="www.linkedin.com/in/kaneshalingamnilu-nilushiya-556369243"> <i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                    <a href="https://github.com/Nilushiya"> <i class="fa-brands fa-github"></i> Github</a>
+                    <a href=""> <i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <a href=""> <i class="fa-brands fa-facebook"></i> Facebook</a>
                 </div>
         </div>
         <div class="credit"> Created by <span>nilu web creater</span> | all rights reserved! |</div>

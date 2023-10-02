@@ -1,7 +1,7 @@
 <?php 
 $server = 'localhost:3307';
 $user = 'root';
-$password = 'nilushiya';
+$password = '';
 $database_name = 'book_db';
 $connection = '';
 

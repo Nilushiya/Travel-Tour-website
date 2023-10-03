@@ -2,7 +2,7 @@
     $server = 'localhost:3307';
     $username = 'root';
     $password = '';
-    $db_name = 'aaaa';
+    $db_name = 'travel';
    
     $connection = '';
 
@@ -16,7 +16,7 @@
     //     return $result->num_rows === 0;
     // }
     function isUsernameUnique($username, $conn) {
-        $sql = "SELECT * FROM bbbb WHERE user = ?";
+        $sql = "SELECT * FROM data WHERE username = ?";
         $stmt = $conn->prepare($sql);
     
         if (!$stmt) {
@@ -36,11 +36,11 @@
 
       if(isUsernameUnique($name,$connection)){
 
-        $sql = "insert into bbbb(user, mail, password) 
+        $sql = "insert into bbbb(username, mail, password) 
         values ('$name', '$mail', '$password')";
 
         mysqli_query($connection,$sql);
-        header('location:welcome.html');
+        header('location:home.html');
       }
       else{
         echo '<script>alert("Username already exists. Please choose a different username.");</script>';

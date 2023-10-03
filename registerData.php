@@ -36,14 +36,17 @@
 
       if(isUsernameUnique($name,$connection)){
 
-        $sql = "insert into bbbb(username, mail, password) 
+        $sql = "insert into data(username, mail, password) 
         values ('$name', '$mail', '$password')";
 
         mysqli_query($connection,$sql);
         header('location:home.html');
       }
       else{
+        //header('location:index.html');
         echo '<script>alert("Username already exists. Please choose a different username.");</script>';
+        //header('location:index.html');
+        echo '<script>window.location.href = "index.html";</script>';
       }
     }
     else{

@@ -1,8 +1,8 @@
 <?php 
-$server = 'localhost:3307';
+$server = 'localhost';
 $user = 'root';
 $password = '';
-$database_name = 'book_db';
+$database_name = 'travel';
 $connection = '';
 
 $connection = mysqli_connect($server,$user, $password, $database_name);

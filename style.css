@@ -106,21 +106,6 @@ section{
 }
 
 
-/* signup signin */
-.registerLogin{
-    background-color: #8e44ad;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    position: relative;
-    top: 20px;
-}
-
-
-
-
-
 /* home */
 .home{
     padding: 0;

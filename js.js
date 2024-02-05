@@ -34,6 +34,9 @@ let swiperr = new Swiper(".reviews-slider", {
   },
 });
 
+
+
+
 let loadMoreBtn = document.querySelector('.packages .load-more .btn');
 let currentItem = 3;
 
@@ -47,3 +50,6 @@ loadMoreBtn.onclick = () =>{
     loadMoreBtn.style.display = 'none'
   }
 }
+
+
+

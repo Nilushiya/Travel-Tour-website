@@ -12,18 +12,17 @@
 </head>
 <body>
         <div class="header">
-            <a href="home.html" class="logo">Travel.</a>
-
+            <a href="index.html" class="logo">Travel.</a>
+            <div class="registerLogin" style="display: flex; flex-direction: row; font-size: 15px; font-weight: 600; color: rgb(15, 15, 15);">
+                <div class="signup" style="padding: 5px; margin-right: 5px;"><a href="Register.html">Signup</a></div>
+                <div class="signin" style="padding: 5px;"><a href="login.html">Signin</a></div>
+            </div>
             <nav class="navbar">
-                <a href="home.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="package.html">Package</a>
                 <a href="book.php">Book</a>
             </nav>
-            <div class="registerLogin" style="display: flex; font-size: 15px; font-weight: 600;">
-                <div class="signup" style="padding: 5px; margin-right: 5px;"><a href="Register.html">Signup</a></div>
-                <div class="signin" style="padding: 5px;"><a href="login.html">Signin</a></div>
-            </div>
             <div id="menu-btn" class="fas fa-bars"></div>
           
         </div>
@@ -36,8 +35,10 @@
 
 <!--home-->
     <section class="home">
+       
         <div class="swiper home-slider">
             <div class="swiper-wrapper">
+              
                 <div class="swiper-slide" style="background: url(media/p1.jpg) no-repeat">
                    <div class="content">
                     <span>Explore, Discover, Travel</span>
@@ -207,7 +208,7 @@
             <div class="box-container">
                 <div class="box">
                     <h3>Quick links</h3>
-                    <a href="home.html"> <i class="fas fa-angle-right"></i> Home</a>
+                    <a href="index.html"> <i class="fas fa-angle-right"></i> Home</a>
                     <a href="about.html"> <i class="fas fa-angle-right"> </i>About</a>
                     <a href="package.html"> <i class="fas fa-angle-right"></i> Package</a>
                     <a href="book.php"> <i class="fas fa-angle-right"></i> Book</a>
@@ -239,8 +240,33 @@
 
    
     <!--swiper js-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!-- <script>fetch('place.json')
+        .then(response => response.json())
+        .then(data => {
+            // Display data on the HTML page
+            const placesContainer = document.getElementById('places-container');
+        
+            data.forEach(place => {
+                const placeDiv = document.createElement('div');
+                placeDiv.className = 'box';
+                placeDiv.innerHTML = `
+                    <div class="image">
+                        <img src="${place.image}" alt="${place.placeName}">
+                    </div>
+                    <div class="content">
+                        <h3>${place.placeName}</h3>
+                        <p>${place.details}</p>
+                        <a href="book.php" class="btn">Book now</a>
+                    </div>
+                `;
+                placesContainer.appendChild(placeDiv);
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));</script> -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js.js"></script>
+   
 </body>
 </html>
 

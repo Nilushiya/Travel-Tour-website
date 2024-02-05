@@ -14,9 +14,12 @@
 
         <div class="header">
             <a href="home.html" class="logo">Travel.</a>
-
+            <div class="registerLogin" style="display: flex; flex-direction: row; font-size: 15px; font-weight: 600; color: rgb(15, 15, 15);">
+                <div class="signup" style="padding: 5px; margin-right: 5px;"><a href="Register.html">Signup</a></div>
+                <div class="signin" style="padding: 5px;"><a href="login.html">Signin</a></div>
+            </div>
             <nav class="navbar">
-                <a href="home.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="package.html">Package</a>
                 <a href="book.php">Book</a>
@@ -77,7 +80,7 @@
             <div class="box-container">
                 <div class="box">
                     <h3>Quick links</h3>
-                    <a href="home.html"> <i class="fas fa-angle-right"></i> Home</a>
+                    <a href="index.html"> <i class="fas fa-angle-right"></i> Home</a>
                     <a href="about.html"> <i class="fas fa-angle-right"> </i>About</a>
                     <a href="package.html"> <i class="fas fa-angle-right"></i> Package</a>
                     <a href="book.php"> <i class="fas fa-angle-right"></i> Book</a>

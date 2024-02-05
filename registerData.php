@@ -34,13 +34,14 @@
         $mail = $_POST['mail'];
         $password = $_POST['Password'];
 
+        $secure_pass = password_hash($pass, PASSWORD_BCRYPT);
       if(isUsernameUnique($name,$connection)){
 
         $sql = "insert into data(username, mail, password) 
-        values ('$name', '$mail', '$password')";
+        values ('$name', '$mail', '$secure_pass')";
 
         mysqli_query($connection,$sql);
-        header('location:home.html');
+        header('location:index.html');
       }
       else{
         //header('location:index.html');

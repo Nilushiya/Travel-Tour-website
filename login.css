@@ -1,0 +1,66 @@
+body{
+    background: rgb(2,0,36);
+}
+
+.loginForm h3 {
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: #1a2cce;
+}
+  .loginForm {
+    padding: 30px 40px;
+    width: 400px;
+    height: 400px; 
+    background-color: rgba(15, 14, 14,.2);
+    margin-top: 110px;
+  }
+  .form-group {
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #3c40c6;
+    font-weight: 500;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid blue;
+  }
+  .form-group #password{
+    color: antiquewhite;
+  }
+  .form-group input:focus{
+    background: transparent;
+    border: none;
+    outline: none;
+    -webkit-box-shadow:none;
+    box-shadow: none;
+  }
+  .forgotPassword{
+    padding-left: 170px;
+    padding-right: 0px;
+    color: #1a2cce;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .loginForm button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 3px;
+    border: none;
+  }
